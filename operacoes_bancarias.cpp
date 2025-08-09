@@ -7,13 +7,11 @@ int main(){
 	setlocale(LC_ALL,"Portuguese");
 	int senha=1234;
 	int saldo=190000;
-	int op;
-	int deposito;
-	int saque;
+	int op, deposito, saque;
 	do{
-	printf("digite um numero:  ");
-	scanf("%d",&senha);
-}
+		printf("digite um numero:  ");
+		scanf("%d",&senha);
+	}
    while(senha!=1234);
    
    printf ("escolha uma opcao:\n");
@@ -25,30 +23,31 @@ int main(){
    scanf("%d",&op);
    
    switch(op){
-   	case 1:
-   		
-   		printf("seu saldo È: R$190.000");
+   	case 1:	
+   		printf("seu saldo √©: R$190.000");
    		break;
     case 2: 
-	 printf("Digite o valor do depÛsito: ");
-	 scanf("%d", &deposito);
-	 saldo=saldo+deposito;
-	 printf("DepÛsito concluido com sucesso.");
-	 break;
+	 	printf("Digite o valor do dep√≥sito: ");
+	 	scanf("%d", &deposito);
+	 	saldo=saldo+deposito;
+	 	printf("Dep√≥sito concluido com sucesso.");
+	 	break;
 	case 3:
-	  printf ("Digite o valor do saque: ");
-	  scanf("%d", &saque); 
-	  senha=senha-saque;
-	   printf("Saque concluÌdo com sucesso.");
-	  break;
+	  	printf ("Digite o valor do saque: ");
+	  	scanf("%d", &saque); 
+	  	senha=senha-saque;
+	   	printf("Saque conclu√≠do com sucesso.");
+	  	break;
 	case 4:
 		printf("obrigado!");
-    break;
+     	break;
     default:
-    	printf("OpÁ„o inv·lida");
+    	printf("Op√ß√£o inv√°lida");
 	
-	return(0);	
+
 	 		
    }
+	return(0);
 	
 }
+
