@@ -24,7 +24,7 @@ int main(){
    
    switch(op){
    	case 1:	
-   		printf("seu saldo é: R$190.000");
+   		printf("seu saldo é:R$%d", saldo);
    		break;
     case 2: 
 	 	printf("Digite o valor do depósito: ");
@@ -50,4 +50,5 @@ int main(){
 	return(0);
 	
 }
+
 
