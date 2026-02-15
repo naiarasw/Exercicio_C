@@ -16,7 +16,7 @@ int main(){
    
    printf ("escolha uma opcao:\n");
    printf("1-ver saldo\n");
-   printf("2-depositar dinheiro\n");
+   printf("2-deposita dinheiro\n");
    printf("3-sacar dinheiro\n");
    printf("4-sair\n");
    printf("digite um valor:    ");
