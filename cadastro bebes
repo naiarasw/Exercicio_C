@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<locale.h> 
+
+struct bebe{ 
+    char nome [40];
+    float peso;
+    float altura; 
+ 
+}; 
+int main() {
+    setlocale (LC_ALL, "Portuguese");
+    struct bebe bebes[4];
+    printf ("INFORME AS INFORMAÇOES DO BEBÊ\n"); 
+    for (int i=0; i<4; i++){
+   
+        printf ("Digite o nome do bebê: "); 
+        fgets (bebes[i].nome, sizeof(bebes[i].nome), stdin);
+        
+        printf ("Digite o peso do bebê: "); 
+        scanf ("%f", &bebes[i].peso);
+        
+        printf("Digite a altura do bebê: ");
+        scanf( "%f", &bebes[i].altura); 
+         getchar();
+        
+       
+        } 
+        for ( int i=0; i<4; i++){
+            printf ( "O nome do bebê é:%s\n O peso do bebê é: %.2f\n A altura do bebê é: %.2f\n ", bebes[i].nome, bebes[i].peso, bebes[i].altura);
+        } 
+        return 0;
+   
+}
